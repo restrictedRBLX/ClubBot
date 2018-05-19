@@ -18,7 +18,7 @@ def GetChannel(Guild, Name):
     Channel = discord.utils.get(Guild.channels, name=Name)
     return Channel
 def IsModerator(Guild, Member):
-    Role = GetRole(Guild, "Moderator")
+    Role = GetRole(Guild, "Moderators")
     for HasRoles in Member.roles:
         if Role == HasRoles:
             return True
